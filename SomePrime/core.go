@@ -2,7 +2,7 @@ package SomePrime
 
 import "multiplesOfThreeOrFive/LargestPrimeFactor"
 
-var nthPrimes = map[int]int{1: 2} // nth->prime number itself
+var nthPrimes map[int]int = map[int]int{1: 2} // nth->prime number itself
 
 func NthPrime(n int) int {
 	val, ok := nthPrimes[n]
